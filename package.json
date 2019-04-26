@@ -1,0 +1,19 @@
+{
+  "name": "@robireton/circle",
+  "version": "1.0.0",
+  "description": "ES6 module for working with angles in circles",
+  "main": "circle.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robireton/circle.git"
+  },
+  "author": "Rob Ireton <rob@ireton.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robireton/circle/issues"
+  },
+  "homepage": "https://github.com/robireton/circle#readme"
+}
