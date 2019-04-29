@@ -43,7 +43,7 @@ for (const test of [
   { degrees: 847.2792206135786, normalized: 127.27922061357856 },
   { degrees: -847.2792206135786, normalized: 232.72077938642144 }
 ]) {
-  assert.strictEqual(circle.normalizedDegrees(test.degrees), test.normalized);
+  assert.strictEqual(circle.normalizedDegrees(test.degrees), test.normalized)
 }
 
 for (const test of [
@@ -83,6 +83,6 @@ for (const test of [
 ]) {
   // Number.EPSILON doesn’t seem to be in node yet.
   // assert.ok(Math.abs(circle.normalizedRadians(test.radians) - test.normalized) < Number.EPISLON, `circle.normalizedRadians(${test.radians}) not close enough to ${test.normalized}`)
-  assert.strictEqual(circle.normalizedRadians(test.radians), test.normalized);
+  assert.strictEqual(circle.normalizedRadians(test.radians), test.normalized)
 }
 console.log('all tests passed')

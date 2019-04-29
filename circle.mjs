@@ -6,13 +6,13 @@ export default {
   normalizedDegrees: degrees => {
     const τ = 360
     const θ = Math.abs(degrees)
-    return degrees < 0 && θ % τ != 0 ? τ - θ % τ : θ % τ
+    return degrees < 0 && θ % τ > 0 ? τ - θ % τ : θ % τ
   },
 
   normalizedRadians: radians => {
     const τ = 2 * Math.PI
     const θ = Math.abs(radians)
-    return radians < 0 && θ % τ != 0 ? τ - θ % τ : θ % τ
+    return radians < 0 && θ % τ > 0 ? τ - θ % τ : θ % τ
   },
 
   DDtoDMS: dd => {
