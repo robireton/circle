@@ -51,7 +51,7 @@ circle.RadiansToDegrees(Math.PI)
 `number`: an angle expressed in degrees
 
 #### returns
-`number`: an angle expressed in degrees in the range [0 – 360]
+`number`: an angle expressed in degrees in the range [0 – 360)
 
 #### example
 ```js
@@ -66,7 +66,7 @@ circle.normalizedDegrees(1122)
 `number`: an angle expressed in radians
 
 #### returns
-`number`: an angle expressed in radians in the range [0 – 2π]
+`number`: an angle expressed in radians in the range [0 – 2π)
 
 #### example
 ```js

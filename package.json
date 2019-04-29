@@ -1,10 +1,10 @@
 {
   "name": "@robireton/circle",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ES6 module for working with angles in circles",
   "main": "circle.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-modules tests.mjs"
   },
   "repository": {
     "type": "git",

@@ -1,23 +1,18 @@
-'use strict';
-
 export default {
   DegreesToRadians: degrees => degrees * Math.PI / 180,
 
   RadiansToDegrees: radians => radians * 180 / Math.PI,
 
   normalizedDegrees: degrees => {
-    let value = Math.abs(degrees)
-    if (value > 360) value -= (Math.floor(value / 360) * 360)
-
-    return ((degrees < 0) ? (360-value) : (value))
+    const τ = 360
+    const θ = Math.abs(degrees)
+    return degrees < 0 && θ % τ != 0 ? τ - θ % τ : θ % τ
   },
 
   normalizedRadians: radians => {
-    let value = radians
-    while (value < 0)         value += ( 2*Math.PI )
-    while (value > 2*Math.PI) value -= ( 2*Math.PI )
-
-    return value
+    const τ = 2 * Math.PI
+    const θ = Math.abs(radians)
+    return radians < 0 && θ % τ != 0 ? τ - θ % τ : θ % τ
   },
 
   DDtoDMS: dd => {
@@ -35,8 +30,8 @@ export default {
     const parts = []
     if (value > 0) parts.unshift(`${value}ʺ`)
     if (parts.length || minutes > 0) parts.unshift(`${minutes}′`)
-    parts.unshift(`${dd<0?'-':''}${degrees}°`)
+    parts.unshift(`${dd < 0 ? '-' : ''}${degrees}°`)
 
-    return parts.join(' ') //narrow no-break space
+    return parts.join(' ') // narrow no-break space
   }
 }
