@@ -1,10 +1,11 @@
 # circle
-ES6 module for working with angles in circles
 
-## install
-```sh
-$ npm install @robireton/circle
-```
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![current version](https://img.shields.io/npm/v/zgm053uka)](https://www.npmjs.com/package/@robireton/circle)
+[![install size](https://packagephobia.com/badge?p=@robireton/circle)](https://packagephobia.com/result?p=@robireton/circle)
+
+
+ES6 module for working with angles in circles
 
 ## usage
 ```js
@@ -51,7 +52,7 @@ circle.RadiansToDegrees(Math.PI)
 `number`: an angle expressed in degrees
 
 #### returns
-`number`: an angle expressed in degrees in the range [0 – 360)
+`number`: an angle expressed in degrees in the interval [0, 360)
 
 #### example
 ```js
@@ -66,7 +67,7 @@ circle.normalizedDegrees(1122)
 `number`: an angle expressed in radians
 
 #### returns
-`number`: an angle expressed in radians in the range [0 – 2π)
+`number`: an angle expressed in radians in the interval [0, 2π)
 
 #### example
 ```js
@@ -82,7 +83,7 @@ decimal degrees to degrees, minutes, and seconds
 `number`: an angle expressed in degrees
 
 #### returns
-`string`: an angle formatted as _d° m′ sʺ_
+`string`: an angle formatted as _d° m′ sʺ_ (that space is a narrow no-break space, U+202F)
 
 #### example
 ```js
