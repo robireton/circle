@@ -1,5 +1,5 @@
 import assert from 'assert'
-import circle from './circle'
+import circle from './circle.js'
 
 for (const test of [
   { degrees: 0, normalized: 0 },
@@ -81,8 +81,6 @@ for (const test of [
   { radians: -48.69468613064179, normalized: 1.5707963267948983 },
   { radians: -55.76326960121883, normalized: 0.7853981633974456 }
 ]) {
-  // Number.EPSILON doesn’t seem to be in node yet.
-  // assert.ok(Math.abs(circle.normalizedRadians(test.radians) - test.normalized) < Number.EPISLON, `circle.normalizedRadians(${test.radians}) not close enough to ${test.normalized}`)
-  assert.strictEqual(circle.normalizedRadians(test.radians), test.normalized)
+  assert.ok(Math.abs(circle.normalizedRadians(test.radians) - test.normalized) <= Number.EPSILON, `circle.normalizedRadians(${test.radians}) not close enough to ${test.normalized}`)
 }
 console.log('all tests passed')
