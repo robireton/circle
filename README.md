@@ -1,7 +1,7 @@
 # circle
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![current version](https://img.shields.io/npm/v/zgm053uka)](https://www.npmjs.com/package/@robireton/circle)
+[![current version](https://img.shields.io/npm/v/@robireton/circle)](https://www.npmjs.com/package/@robireton/circle)
 [![install size](https://packagephobia.com/badge?p=@robireton/circle)](https://packagephobia.com/result?p=@robireton/circle)
 
 
