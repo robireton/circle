@@ -1,6 +1,6 @@
 {
   "name": "@robireton/circle",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "ES6 module for working with angles in circles",
   "type": "module",
   "engines": {
